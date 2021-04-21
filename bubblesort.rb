@@ -26,8 +26,6 @@ def bubble_sort_by(array)
   while index < array_length
     if yield(array[index], array[index + 1]).negative?
       index += 1
-    elsif yield(array[index], array[index + 1]).zero?
-      index += 1
     elsif yield(array[index], array[index + 1]).positive?
       array[index], array[index + 1] = array[index + 1], array[index]
       index = 0
