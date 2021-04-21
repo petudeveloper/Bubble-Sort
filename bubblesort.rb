@@ -21,10 +21,16 @@ puts bubble_sort(ages)
 
 #sorted by algorithm
 def bubble_sort_by(array)
+  index = 0
   array_length = array.length - 1
-  array_length.downto(1) do |inner|
-    inner.times do |index|
-      array[index], array[index + 1] = array[index + 1], array[index] if yield(array[index], array[index + 1]).positive?
+  while index < array_length
+    if yield(array[index], array[index + 1]).negative?
+      index += 1
+    elsif yield(array[index], array[index + 1]).zero?
+      index += 1
+    elsif yield(array[index], array[index + 1]).positive?
+      array[index], array[index + 1] = array[index + 1], array[index]
+      index = 0
     end
   end
   print array
