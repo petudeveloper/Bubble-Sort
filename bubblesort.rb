@@ -21,19 +21,16 @@ puts bubble_sort(ages)
 
 #sorted by algorithm
 def bubble_sort_by(array)
-  not_sorted = true
-  while not_sorted do
-    index = 0
-    not_sorted = false
-    while index < array.length - 1
-      if(yield array[index], array[index + 1]).to_i >= 0
-        array[index], array[index + 1] = array[index + 1], array[index]
-      end
-      index += 1
+  array_length = array.length - 1
+  array_length.downto(1) do |inner|
+    inner.times do |index|
+      array[index], array[index + 1] = array[index + 1], array[index] if yield(array[index], array[index + 1]).positive?
     end
   end
   print array
 end
 
-greetings = Array["hello", "hey", "hi"]
-puts bubble_sort_by(greetings)
+# case scenario given
+bubble_sort_by(["hi","hello","hey", "poor", "abcderf"]) do |left,right|
+  left.length - right.length
+end
