@@ -2,10 +2,21 @@
 
 # Bubble Sort
 
-> One paragraph statement about the project.
+This is the first project that welcomes us into the Ruby Section of the *Microverse Remote Software Development Curriculum*.
 
-![screenshot](./app_screenshot.png)
+This is a quick extract that helps explains the underlying concepts of bubble sort
 
+## Bubble Sort Algorithm: Steps on how it works:
+In an unsorted array of elements, start with the first two elements and sort them in ascending order. (Compare the element to check which one is greater).
+
+- Compare the second and third element to check which one is greater, and sort them in ascending order.
+- Compare the third and fourth element to check which one is greater, and sort them in ascending order.
+- Compare the fourth and fifth element to check which one is greater, and sort them in ascending order.
+- Repeat steps 1–5 until no more swaps are required.
+
+Simple right? Below is a simple animated illustration:
+
+![screenshot](./exampleimage.gif)
 
 ## Built With
 
@@ -20,20 +31,6 @@
 
 To get a local copy up and running use this command git clone https://github.com/petumazo/Bubble-Sort.git
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
 ## Authors
 
 👤 **David Alvarez**
@@ -46,7 +43,7 @@ To get a local copy up and running use this command git clone https://github.com
 
 - GitHub: [@DanSam5K](https://github.com/DanSam5K)
 - Twitter: [@_dan_sam](https://twitter.com/_dan_sam)
-- LinkedIn: [Dan Samuel](https://www.linkedin.com/in/dansamuel/)
+- LinkedIn: [DanSam](https://www.linkedin.com/in/dansamuel/)
 
 ## 🤝 Contributing
 
@@ -60,9 +57,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Project originally taken from [The Odin Project](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-programming/lessons/bubble-sort)
+- Project inspired by Microverse Program
 
 ## 📝 License
 
