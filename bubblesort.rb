@@ -19,7 +19,7 @@ end
 ages = Array[1, 8, 9, 17, 6, 9, 5, 2]
 puts bubble_sort(ages)
 
-#sorted by algorithm
+# sorted by algorithm
 def bubble_sort_by(array)
   index = 0
   array_length = array.length - 1
@@ -35,6 +35,6 @@ def bubble_sort_by(array)
 end
 
 # case scenario given
-bubble_sort_by(["hi","hello","hey", "poor", "abcderf"]) do |left,right|
+bubble_sort_by(%w[hi hello hey poor abcderf]) do |left, right|
   left.length - right.length
 end
