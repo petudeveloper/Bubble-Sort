@@ -1,17 +1,17 @@
-def bubble_sort (array)
-    not_sorted = true
-    while not_sorted do
-        index = 0
-        not_sorted = false
-        while index < (array.length - 1)
-            if array[index] > array[index + 1]
-                array[index], array[index + 1] = array[index + 1], array[index]
-                not_sorted = true
-            end
-            index += 1
-        end
+def bubble_sort(array)
+  not_sorted = true
+  while not_sorted
+    index = 0
+    not_sorted = false
+    while index < (array.length - 1)
+      if array[index] > array[index + 1]
+        array[index], array[index + 1] = array[index + 1], array[index]
+        not_sorted = true
+      end
+      index += 1
     end
-    print array
+  end
+  print array
 end
 
 # case scenario given
