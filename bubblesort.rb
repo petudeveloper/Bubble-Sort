@@ -21,14 +21,16 @@ puts bubble_sort(ages)
 
 # sorted by algorithm
 def bubble_sort_by(array)
-  index = 0
-  array_length = array.length - 1
-  while index < array_length
-    if yield(array[index], array[index + 1]).negative?
+  not_sorted = true
+  while not_sorted
+    index = 0
+    not_sorted = false
+    while index < (array.length - 1)
+      if yield(array[index], array[index + 1]).positive?
+        array[index], array[index + 1] = array[index + 1], array[index]
+        not_sorted = true
+      end
       index += 1
-    elsif yield(array[index], array[index + 1]).positive?
-      array[index], array[index + 1] = array[index + 1], array[index]
-      index = 0
     end
   end
   print array
