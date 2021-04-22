@@ -12,7 +12,7 @@ def bubble_sort(array)
       index += 1
     end
   end
-  print array
+  array
 end
 
 # case scenario given
@@ -33,7 +33,7 @@ def bubble_sort_by(array)
       index += 1
     end
   end
-  print array
+  array
 end
 
 # case scenario given
