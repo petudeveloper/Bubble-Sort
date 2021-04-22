@@ -40,5 +40,5 @@ end
 arr = bubble_sort_by(%w[hello hiya hey hi h]) do |left, right|
   left.length - right.length
 end
-  
+
 p arr
